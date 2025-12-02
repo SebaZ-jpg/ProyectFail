@@ -2,7 +2,7 @@ package biblioteca;
 
 import java.time.LocalData; 
 
-public class Prestamo {
+public class Prestar {
 
     private Usuario usuario;
     private Libro libro;

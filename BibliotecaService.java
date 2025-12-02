@@ -79,7 +79,7 @@ public class BibliotecaService {
                 resultado = true;
             } else if (contadorPrestamos == u.getMaximoPrestamosSimultaneos()) {
                 resultado = true;
-            } else if (contadorPrestamos < 0) {
+            } if (contadorPrestamos < 0) {
                 resultado = true;
             } else {
                 resultado = false;

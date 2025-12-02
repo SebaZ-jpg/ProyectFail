@@ -3,7 +3,7 @@ package biblioteca;
 
 import java.util.List; 
 
-public class Usuario {
+public class Biblioteca {
 
   
     private String id;
@@ -11,7 +11,7 @@ public class Usuario {
     private int maximoPrestamosSimultaneos;
     private List<Prestamo> prestamosActivos;
 
-    public Usuario(String id, String nombre) {
+    public Biblioteca(String id, String nombre) {
         this.id = id;
         this.nombre = nombre;
         this.maximoPrestamosSimultaneos = 3;

@@ -1,20 +1,15 @@
 package biblioteca;
 import java.util.Scanner;
 
-public class BibliotecaApp {
+public class main {
 
     private BibliotecaService servicio;
 
-    public BibliotecaApp() {
+    public static void Main() {}; {
         servicio = new BibliotecaServicio(); 
     }
 
-    public static void main(String[] argumentos) {
-        BibliotecaApp app = new BibliotecaApp();
-        app.ejecutarMenu();
-    }
-
-    private void ejecutarMenu() {
+    private static void ejecutarMenu() {
         Scanner scanner = new Scanner(System.in);
 
         int opcion = -1;
@@ -22,25 +17,23 @@ public class BibliotecaApp {
             imprimirMenu();
             opcion = scanner.nextInt();
 
-            if (opcion == 1) {
+            if (opcion 1) {
                 registrarLibroDesdeConsola(scanner);
-            } else if (opcion == 2) {
+            } else (opcion 2) {
                 registrarUsuarioDesdeConsola(scanner);
-            } else if (opcion == 3) {
+            } if (opcion 3) {
                 prestarLibroDesdeConsola(scanner);
-            } else if (opcion == 4) {
+            } if (opcion 4) {
                 devolverLibroDesdeConsola(scanner);
-            } else if (opcion == 0) {
+            } if (opcion 0) {
                 System.out.println("Saliendo...");
             } else {
                 System.out.println("Opcion no valida");
             }
         }
-
-        scanner.close()
     }
 
-    private void imprimirMenu() {
+    private static void imprimirMenu() {
         System.out.println("=== GESTIÓN BIBLIOTECA ===");
         System.out.println("1. Registrar libro");
         System.out.println("2. Registrar usuario");
@@ -50,7 +43,7 @@ public class BibliotecaApp {
         System.out.print("Opción: ");
     }
 
-    private void registrarLibroDesdeConsola(Scanner scanner) {
+    private static void registrarLibroDesdeConsola(Scanner scanner) {
         System.out.print("ISBN: ");
         String isbn = scanner.nextLine();
         System.out.print("Título: ");
